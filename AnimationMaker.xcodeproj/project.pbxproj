@@ -13,6 +13,8 @@
 		2B5C0D211D6C820C00278761 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B5C0D1F1D6C820C00278761 /* Main.storyboard */; };
 		2B5C0D231D6C820C00278761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5C0D221D6C820C00278761 /* Assets.xcassets */; };
 		2B5C0D261D6C820C00278761 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B5C0D241D6C820C00278761 /* LaunchScreen.storyboard */; };
+		2B5C0D351D6D79E000278761 /* BookMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5C0D341D6D79E000278761 /* BookMarkView.m */; };
+		2B5C0D3B1D6D89B700278761 /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5C0D391D6D89B700278761 /* QCMethod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		2B5C0D221D6C820C00278761 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B5C0D251D6C820C00278761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B5C0D271D6C820C00278761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B5C0D331D6D79E000278761 /* BookMarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookMarkView.h; sourceTree = "<group>"; };
+		2B5C0D341D6D79E000278761 /* BookMarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookMarkView.m; sourceTree = "<group>"; };
+		2B5C0D381D6D89B700278761 /* QCMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCMethod.h; sourceTree = "<group>"; };
+		2B5C0D391D6D89B700278761 /* QCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCMethod.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,10 @@
 				2B5C0D241D6C820C00278761 /* LaunchScreen.storyboard */,
 				2B5C0D271D6C820C00278761 /* Info.plist */,
 				2B5C0D161D6C820C00278761 /* Supporting Files */,
+				2B5C0D331D6D79E000278761 /* BookMarkView.h */,
+				2B5C0D341D6D79E000278761 /* BookMarkView.m */,
+				2B5C0D381D6D89B700278761 /* QCMethod.h */,
+				2B5C0D391D6D89B700278761 /* QCMethod.m */,
 			);
 			path = AnimationMaker;
 			sourceTree = "<group>";
@@ -110,6 +120,7 @@
 				TargetAttributes = {
 					2B5C0D121D6C820C00278761 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = DQYAM3GKBQ;
 					};
 				};
 			};
@@ -150,7 +161,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B5C0D1E1D6C820C00278761 /* ViewController.m in Sources */,
+				2B5C0D3B1D6D89B700278761 /* QCMethod.m in Sources */,
 				2B5C0D1B1D6C820C00278761 /* AppDelegate.m in Sources */,
+				2B5C0D351D6D79E000278761 /* BookMarkView.m in Sources */,
 				2B5C0D181D6C820C00278761 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +276,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AnimationMaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shadev.AnimationMaker;
@@ -274,6 +288,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AnimationMaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shadev.AnimationMaker;
@@ -300,6 +315,7 @@
 				2B5C0D2C1D6C820C00278761 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
