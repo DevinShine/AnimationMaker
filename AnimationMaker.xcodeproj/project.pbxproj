@@ -11,6 +11,10 @@
 		2B56422C1D785C730020E77E /* BookMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B56422B1D785C730020E77E /* BookMarkView.m */; };
 		2B5642301D785C8A0020E77E /* BookMarkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B56422E1D785C8A0020E77E /* BookMarkController.m */; };
 		2B5642311D785C8A0020E77E /* BookMarkController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B56422F1D785C8A0020E77E /* BookMarkController.xib */; };
+		2B5642361D78690F0020E77E /* CheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5642341D78690F0020E77E /* CheckViewController.m */; };
+		2B5642371D78690F0020E77E /* CheckViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B5642351D78690F0020E77E /* CheckViewController.xib */; };
+		2B56423A1D78691C0020E77E /* CheckView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5642391D78691C0020E77E /* CheckView.m */; };
+		2B56423D1D786E970020E77E /* CheckSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B56423C1D786E970020E77E /* CheckSwitch.m */; };
 		2B5C0D181D6C820C00278761 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5C0D171D6C820C00278761 /* main.m */; };
 		2B5C0D1B1D6C820C00278761 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5C0D1A1D6C820C00278761 /* AppDelegate.m */; };
 		2B5C0D1E1D6C820C00278761 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5C0D1D1D6C820C00278761 /* ViewController.m */; };
@@ -28,6 +32,13 @@
 		2B56422D1D785C8A0020E77E /* BookMarkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookMarkController.h; sourceTree = "<group>"; };
 		2B56422E1D785C8A0020E77E /* BookMarkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookMarkController.m; sourceTree = "<group>"; };
 		2B56422F1D785C8A0020E77E /* BookMarkController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookMarkController.xib; sourceTree = "<group>"; };
+		2B5642331D78690F0020E77E /* CheckViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckViewController.h; sourceTree = "<group>"; };
+		2B5642341D78690F0020E77E /* CheckViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckViewController.m; sourceTree = "<group>"; };
+		2B5642351D78690F0020E77E /* CheckViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckViewController.xib; sourceTree = "<group>"; };
+		2B5642381D78691C0020E77E /* CheckView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckView.h; sourceTree = "<group>"; };
+		2B5642391D78691C0020E77E /* CheckView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckView.m; sourceTree = "<group>"; };
+		2B56423B1D786E970020E77E /* CheckSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckSwitch.h; sourceTree = "<group>"; };
+		2B56423C1D786E970020E77E /* CheckSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckSwitch.m; sourceTree = "<group>"; };
 		2B5C0D131D6C820C00278761 /* AnimationMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B5C0D171D6C820C00278761 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2B5C0D191D6C820C00278761 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -65,6 +76,20 @@
 			path = BookMark;
 			sourceTree = "<group>";
 		};
+		2B5642321D7868BA0020E77E /* CheckView */ = {
+			isa = PBXGroup;
+			children = (
+				2B5642381D78691C0020E77E /* CheckView.h */,
+				2B5642391D78691C0020E77E /* CheckView.m */,
+				2B56423B1D786E970020E77E /* CheckSwitch.h */,
+				2B56423C1D786E970020E77E /* CheckSwitch.m */,
+				2B5642331D78690F0020E77E /* CheckViewController.h */,
+				2B5642341D78690F0020E77E /* CheckViewController.m */,
+				2B5642351D78690F0020E77E /* CheckViewController.xib */,
+			);
+			path = CheckView;
+			sourceTree = "<group>";
+		};
 		2B5C0D0A1D6C820C00278761 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +111,7 @@
 			children = (
 				2B5C0D161D6C820C00278761 /* Supporting Files */,
 				2B5642291D785C5A0020E77E /* BookMark */,
+				2B5642321D7868BA0020E77E /* CheckView */,
 				2B5642261D785BBC0020E77E /* AnimationDemoController.h */,
 				2B5642271D785BBC0020E77E /* AnimationDemoController.m */,
 			);
@@ -169,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B5C0D261D6C820C00278761 /* LaunchScreen.storyboard in Resources */,
+				2B5642371D78690F0020E77E /* CheckViewController.xib in Resources */,
 				2B5642311D785C8A0020E77E /* BookMarkController.xib in Resources */,
 				2B5C0D231D6C820C00278761 /* Assets.xcassets in Resources */,
 				2B5C0D211D6C820C00278761 /* Main.storyboard in Resources */,
@@ -182,13 +209,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B56423D1D786E970020E77E /* CheckSwitch.m in Sources */,
 				2B5C0D1E1D6C820C00278761 /* ViewController.m in Sources */,
 				2B5642301D785C8A0020E77E /* BookMarkController.m in Sources */,
 				2B5C0D3B1D6D89B700278761 /* QCMethod.m in Sources */,
 				2B56422C1D785C730020E77E /* BookMarkView.m in Sources */,
 				2B5C0D1B1D6C820C00278761 /* AppDelegate.m in Sources */,
+				2B5642361D78690F0020E77E /* CheckViewController.m in Sources */,
 				2B5C0D181D6C820C00278761 /* main.m in Sources */,
 				2B5642281D785BBC0020E77E /* AnimationDemoController.m in Sources */,
+				2B56423A1D78691C0020E77E /* CheckView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

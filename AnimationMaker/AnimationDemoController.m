@@ -24,6 +24,7 @@
     self.titles = @[].mutableCopy;
     self.classNames = @[].mutableCopy;
     [self addCell:@"BookMark" class:@"BookMarkController"];
+    [self addCell:@"CheckView" class:@"CheckViewController"];
     [self.tableView reloadData];
 }
 

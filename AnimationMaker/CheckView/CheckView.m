@@ -1,0 +1,257 @@
+//
+//  CheckView.m
+//
+//  Code generated using QuartzCode 1.40.0 on 16/9/1.
+//  www.quartzcodeapp.com
+//
+
+#import "CheckView.h"
+#import "QCMethod.h"
+
+@interface CheckView ()
+
+@property (nonatomic, strong) NSMutableDictionary * layers;
+@property (nonatomic, strong) NSMapTable * completionBlocks;
+@property (nonatomic, assign) BOOL  updateLayerValueForCompletedAnimation;
+
+
+@end
+
+@implementation CheckView
+
+#pragma mark - Life Cycle
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self setupProperties];
+        [self setupLayers];
+    }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        [self setupProperties];
+        [self setupLayers];
+    }
+    return self;
+}
+
+
+
+- (void)setupProperties{
+    self.completionBlocks = [NSMapTable mapTableWithKeyOptions:NSPointerFunctionsOpaqueMemory valueOptions:NSPointerFunctionsStrongMemory];;
+    self.layers = [NSMutableDictionary dictionary];
+    self.backgroundColor = [UIColor clearColor];
+}
+
+- (void)setupLayers{
+    CAShapeLayer * bg = [CAShapeLayer layer];
+    bg.frame = CGRectMake(10, 10, 80, 80);
+    bg.path = [self bgPath].CGPath;
+    [self.layer addSublayer:bg];
+    self.layers[@"bg"] = bg;
+    
+    CAShapeLayer * left = [CAShapeLayer layer];
+    left.frame = CGRectMake(29.73, 32.04, 37.63, 37.63);
+    left.path = [self leftPath].CGPath;
+    [self.layer addSublayer:left];
+    self.layers[@"left"] = left;
+    
+    CAShapeLayer * right = [CAShapeLayer layer];
+    right.frame = CGRectMake(31.19, 31.19, 37.63, 37.63);
+    right.path = [self rightPath].CGPath;
+    [self.layer addSublayer:right];
+    self.layers[@"right"] = right;
+    
+    CAShapeLayer * leftSmall = [CAShapeLayer layer];
+    leftSmall.frame = CGRectMake(16.69, 55.31, 14, 14);
+    leftSmall.path = [self leftSmallPath].CGPath;
+    [self.layer addSublayer:leftSmall];
+    self.layers[@"leftSmall"] = leftSmall;
+    
+    [self resetLayerPropertiesForLayerIdentifiers:nil];
+}
+
+- (void)resetLayerPropertiesForLayerIdentifiers:(NSArray *)layerIds{
+    [CATransaction begin];
+    [CATransaction setDisableActions:YES];
+    
+    if(!layerIds || [layerIds containsObject:@"bg"]){
+        CAShapeLayer * bg = self.layers[@"bg"];
+        bg.fillColor = [UIColor colorWithRed:0.949 green: 0.89 blue:0.827 alpha:1].CGColor;
+        bg.lineWidth = 0;
+    }
+    if(!layerIds || [layerIds containsObject:@"left"]){
+        CAShapeLayer * left = self.layers[@"left"];
+        left.anchorPoint = CGPointMake(0, 0);
+        left.frame       = CGRectMake(29.73, 32.04, 37.63, 37.63);
+        left.lineCap     = kCALineCapRound;
+        left.fillColor   = nil;
+        left.strokeColor = [UIColor whiteColor].CGColor;
+        left.lineWidth   = 3;
+    }
+    if(!layerIds || [layerIds containsObject:@"right"]){
+        CAShapeLayer * right = self.layers[@"right"];
+        [right setValue:@(-90 * M_PI/180) forKeyPath:@"transform.rotation"];
+        right.lineCap     = kCALineCapRound;
+        right.fillColor   = nil;
+        right.strokeColor = [UIColor whiteColor].CGColor;
+        right.lineWidth   = 3;
+    }
+    if(!layerIds || [layerIds containsObject:@"leftSmall"]){
+        CAShapeLayer * leftSmall = self.layers[@"leftSmall"];
+        leftSmall.hidden      = YES;
+        leftSmall.lineCap     = kCALineCapRound;
+        leftSmall.fillColor   = nil;
+        leftSmall.strokeColor = [UIColor whiteColor].CGColor;
+        leftSmall.lineWidth   = 3;
+    }
+    
+    [CATransaction commit];
+}
+
+#pragma mark - Animation Setup
+
+- (void)addCheckAnimationAnimation{
+    [self addCheckAnimationAnimationCompletionBlock:nil];
+}
+
+- (void)addCheckAnimationAnimationCompletionBlock:(void (^)(BOOL finished))completionBlock{
+    if (completionBlock){
+        CABasicAnimation * completionAnim = [CABasicAnimation animationWithKeyPath:@"completionAnim"];;
+        completionAnim.duration = 0.476;
+        completionAnim.delegate = self;
+        [completionAnim setValue:@"CheckAnimation" forKey:@"animId"];
+        [completionAnim setValue:@(NO) forKey:@"needEndAnim"];
+        [self.layer addAnimation:completionAnim forKey:@"CheckAnimation"];
+        [self.completionBlocks setObject:completionBlock forKey:[self.layer animationForKey:@"CheckAnimation"]];
+    }
+    
+    NSString * fillMode = kCAFillModeForwards;
+    
+    ////Bg animation
+    CAKeyframeAnimation * bgFillColorAnim = [CAKeyframeAnimation animationWithKeyPath:@"fillColor"];
+    bgFillColorAnim.values                = @[(id)[UIColor colorWithRed:0.949 green: 0.89 blue:0.827 alpha:1].CGColor,
+                                              (id)[UIColor colorWithRed:0.494 green: 0.525 blue:0.98 alpha:1].CGColor];
+    bgFillColorAnim.keyTimes              = @[@0, @1];
+    bgFillColorAnim.duration              = 0.476;
+    bgFillColorAnim.timingFunction        = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+    
+    CAAnimationGroup * bgCheckAnimationAnim = [QCMethod groupAnimations:@[bgFillColorAnim] fillMode:fillMode];
+    [self.layers[@"bg"] addAnimation:bgCheckAnimationAnim forKey:@"bgCheckAnimationAnim"];
+    
+    ////Left animation
+    CAKeyframeAnimation * leftPathAnim = [CAKeyframeAnimation animationWithKeyPath:@"path"];
+    leftPathAnim.values                = @[(id)[QCMethod alignToBottomPath:[self leftPath] layer:self.layers[@"left"]].CGPath, (id)[QCMethod alignToBottomPath:[self leftSmallPath] layer:self.layers[@"left"]].CGPath];
+    leftPathAnim.keyTimes              = @[@0, @1];
+    leftPathAnim.duration              = 0.476;
+    leftPathAnim.timingFunction        = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+    
+    CAKeyframeAnimation * leftPositionAnim = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+    leftPositionAnim.values                = @[[NSValue valueWithCGPoint:CGPointMake(29.725, 32.039)], [NSValue valueWithCGPoint:CGPointMake(40, 92)]];
+    leftPositionAnim.keyTimes              = @[@0, @1];
+    leftPositionAnim.duration              = 0.476;
+    leftPositionAnim.timingFunction        = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+    
+    CAKeyframeAnimation * leftTransformAnim = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation.z"];
+    leftTransformAnim.values         = @[@(0),
+                                         @(-180 * M_PI/180)];
+    leftTransformAnim.keyTimes       = @[@0, @1];
+    leftTransformAnim.duration       = 0.476;
+    leftTransformAnim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+    
+    CAAnimationGroup * leftCheckAnimationAnim = [QCMethod groupAnimations:@[leftPathAnim, leftPositionAnim, leftTransformAnim] fillMode:fillMode];
+    [self.layers[@"left"] addAnimation:leftCheckAnimationAnim forKey:@"leftCheckAnimationAnim"];
+    
+    ////Right animation
+    CAKeyframeAnimation * rightTransformAnim = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation.z"];
+    rightTransformAnim.values         = @[@(-90 * M_PI/180),
+                                          @(-270 * M_PI/180)];
+    rightTransformAnim.keyTimes       = @[@0, @1];
+    rightTransformAnim.duration       = 0.471;
+    rightTransformAnim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+    
+    CAKeyframeAnimation * rightPositionAnim = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+    rightPositionAnim.values         = @[[NSValue valueWithCGPoint:CGPointMake(50, 50)], [NSValue valueWithCGPoint:CGPointMake(59, 50)]];
+    rightPositionAnim.keyTimes       = @[@0, @1];
+    rightPositionAnim.duration       = 0.476;
+    rightPositionAnim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+    
+    CAAnimationGroup * rightCheckAnimationAnim = [QCMethod groupAnimations:@[rightTransformAnim, rightPositionAnim] fillMode:fillMode];
+    [self.layers[@"right"] addAnimation:rightCheckAnimationAnim forKey:@"rightCheckAnimationAnim"];
+}
+
+#pragma mark - Animation Cleanup
+
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{
+    void (^completionBlock)(BOOL) = [self.completionBlocks objectForKey:anim];;
+    if (completionBlock){
+        [self.completionBlocks removeObjectForKey:anim];
+        if ((flag && self.updateLayerValueForCompletedAnimation) || [[anim valueForKey:@"needEndAnim"] boolValue]){
+            [self updateLayerValuesForAnimationId:[anim valueForKey:@"animId"]];
+            [self removeAnimationsForAnimationId:[anim valueForKey:@"animId"]];
+        }
+        completionBlock(flag);
+    }
+}
+
+- (void)updateLayerValuesForAnimationId:(NSString *)identifier{
+    if([identifier isEqualToString:@"CheckAnimation"]){
+        [QCMethod updateValueFromPresentationLayerForAnimation:[self.layers[@"bg"] animationForKey:@"bgCheckAnimationAnim"] theLayer:self.layers[@"bg"]];
+        [QCMethod updateValueFromPresentationLayerForAnimation:[self.layers[@"left"] animationForKey:@"leftCheckAnimationAnim"] theLayer:self.layers[@"left"]];
+        [QCMethod updateValueFromPresentationLayerForAnimation:[self.layers[@"right"] animationForKey:@"rightCheckAnimationAnim"] theLayer:self.layers[@"right"]];
+    }
+}
+
+- (void)removeAnimationsForAnimationId:(NSString *)identifier{
+    if([identifier isEqualToString:@"CheckAnimation"]){
+        [self.layers[@"bg"] removeAnimationForKey:@"bgCheckAnimationAnim"];
+        [self.layers[@"left"] removeAnimationForKey:@"leftCheckAnimationAnim"];
+        [self.layers[@"right"] removeAnimationForKey:@"rightCheckAnimationAnim"];
+    }
+}
+
+- (void)removeAllAnimations{
+    [self.layers enumerateKeysAndObjectsUsingBlock:^(id key, CALayer *layer, BOOL *stop) {
+        [layer removeAllAnimations];
+    }];
+}
+
+#pragma mark - Bezier Path
+
+- (UIBezierPath*)bgPath{
+    UIBezierPath * bgPath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, 80, 80)];
+    return bgPath;
+}
+
+- (UIBezierPath*)leftPath{
+    UIBezierPath *leftPath = [UIBezierPath bezierPath];
+    [leftPath moveToPoint:CGPointMake(0, 0)];
+    [leftPath addLineToPoint:CGPointMake(37.626, 37.626)];
+    
+    return leftPath;
+}
+
+- (UIBezierPath*)rightPath{
+    UIBezierPath *rightPath = [UIBezierPath bezierPath];
+    [rightPath moveToPoint:CGPointMake(0, 0)];
+    [rightPath addLineToPoint:CGPointMake(37.626, 37.626)];
+    
+    return rightPath;
+}
+
+- (UIBezierPath*)leftSmallPath{
+    UIBezierPath *leftSmallPath = [UIBezierPath bezierPath];
+    [leftSmallPath moveToPoint:CGPointMake(0, 0)];
+    [leftSmallPath addLineToPoint:CGPointMake(14, 14)];
+    
+    return leftSmallPath;
+}
+
+
+@end

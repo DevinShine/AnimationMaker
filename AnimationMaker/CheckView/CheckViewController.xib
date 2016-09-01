@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CheckViewController">
+            <connections>
+                <outlet property="checkView" destination="48n-yM-Ic5" id="Vhx-hc-s7Z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="48n-yM-Ic5" customClass="CheckView">
+                    <rect key="frame" x="250" y="250" width="100" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="9tt-ev-frA"/>
+                        <constraint firstAttribute="width" constant="100" id="yK1-lF-ssr"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYG-bF-ZuC">
+                    <rect key="frame" x="283" y="374" width="34" height="30"/>
+                    <state key="normal" title="Start"/>
+                    <connections>
+                        <action selector="startAction:" destination="-1" eventType="touchUpInside" id="JSO-Gt-sac"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hf0-Rx-PLE" customClass="CheckSwitch">
+                    <rect key="frame" x="200" y="130" width="200" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="0Wt-A8-EJe"/>
+                        <constraint firstAttribute="height" constant="100" id="qHC-F8-vGU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.37636325503355705" green="0.72910549496644295" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="aYG-bF-ZuC" firstAttribute="top" secondItem="48n-yM-Ic5" secondAttribute="bottom" constant="24" id="0sh-gL-JSw"/>
+                <constraint firstItem="aYG-bF-ZuC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6SO-JM-Tiq"/>
+                <constraint firstItem="48n-yM-Ic5" firstAttribute="top" secondItem="hf0-Rx-PLE" secondAttribute="bottom" constant="20" id="9c3-Kd-Yzo"/>
+                <constraint firstItem="48n-yM-Ic5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="J3j-kj-02z"/>
+                <constraint firstItem="48n-yM-Ic5" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Pbl-7N-pBa"/>
+                <constraint firstItem="aYG-bF-ZuC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="12" id="hIE-xQ-Be1"/>
+                <constraint firstItem="hf0-Rx-PLE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qhv-uk-KD9"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="hIE-xQ-Be1"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
