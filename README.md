@@ -7,3 +7,9 @@ Inspired by the [works](https://dribbble.com/shots/2908637-Bookmark-Animation) o
 
 ![BookmarkAnimation](https://d13yacurqjgara.cloudfront.net/users/767222/screenshots/2908637/scott-brookshire-bookmark-animation.gif)
 
+2.**SwitchAnimation**
+Inspired by the [works](https://dribbble.com/shots/2309834-Yet-another-toggle-animation) of [Andrei Mironov](https://dribbble.com/andmironov)
+
+![SwitchAnimation](https://d13yacurqjgara.cloudfront.net/users/45534/screenshots/2309834/5.gif)
+
+
