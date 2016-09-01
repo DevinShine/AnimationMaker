@@ -7,17 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B5642281D785BBC0020E77E /* AnimationDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5642271D785BBC0020E77E /* AnimationDemoController.m */; };
+		2B56422C1D785C730020E77E /* BookMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B56422B1D785C730020E77E /* BookMarkView.m */; };
+		2B5642301D785C8A0020E77E /* BookMarkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B56422E1D785C8A0020E77E /* BookMarkController.m */; };
+		2B5642311D785C8A0020E77E /* BookMarkController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B56422F1D785C8A0020E77E /* BookMarkController.xib */; };
 		2B5C0D181D6C820C00278761 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5C0D171D6C820C00278761 /* main.m */; };
 		2B5C0D1B1D6C820C00278761 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5C0D1A1D6C820C00278761 /* AppDelegate.m */; };
 		2B5C0D1E1D6C820C00278761 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5C0D1D1D6C820C00278761 /* ViewController.m */; };
 		2B5C0D211D6C820C00278761 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B5C0D1F1D6C820C00278761 /* Main.storyboard */; };
 		2B5C0D231D6C820C00278761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5C0D221D6C820C00278761 /* Assets.xcassets */; };
 		2B5C0D261D6C820C00278761 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B5C0D241D6C820C00278761 /* LaunchScreen.storyboard */; };
-		2B5C0D351D6D79E000278761 /* BookMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5C0D341D6D79E000278761 /* BookMarkView.m */; };
 		2B5C0D3B1D6D89B700278761 /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5C0D391D6D89B700278761 /* QCMethod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B5642261D785BBC0020E77E /* AnimationDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationDemoController.h; sourceTree = "<group>"; };
+		2B5642271D785BBC0020E77E /* AnimationDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationDemoController.m; sourceTree = "<group>"; };
+		2B56422A1D785C730020E77E /* BookMarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookMarkView.h; sourceTree = "<group>"; };
+		2B56422B1D785C730020E77E /* BookMarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookMarkView.m; sourceTree = "<group>"; };
+		2B56422D1D785C8A0020E77E /* BookMarkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookMarkController.h; sourceTree = "<group>"; };
+		2B56422E1D785C8A0020E77E /* BookMarkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookMarkController.m; sourceTree = "<group>"; };
+		2B56422F1D785C8A0020E77E /* BookMarkController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookMarkController.xib; sourceTree = "<group>"; };
 		2B5C0D131D6C820C00278761 /* AnimationMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B5C0D171D6C820C00278761 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2B5C0D191D6C820C00278761 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,8 +38,6 @@
 		2B5C0D221D6C820C00278761 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B5C0D251D6C820C00278761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B5C0D271D6C820C00278761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B5C0D331D6D79E000278761 /* BookMarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookMarkView.h; sourceTree = "<group>"; };
-		2B5C0D341D6D79E000278761 /* BookMarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookMarkView.m; sourceTree = "<group>"; };
 		2B5C0D381D6D89B700278761 /* QCMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCMethod.h; sourceTree = "<group>"; };
 		2B5C0D391D6D89B700278761 /* QCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCMethod.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -45,6 +53,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B5642291D785C5A0020E77E /* BookMark */ = {
+			isa = PBXGroup;
+			children = (
+				2B56422A1D785C730020E77E /* BookMarkView.h */,
+				2B56422B1D785C730020E77E /* BookMarkView.m */,
+				2B56422D1D785C8A0020E77E /* BookMarkController.h */,
+				2B56422E1D785C8A0020E77E /* BookMarkController.m */,
+				2B56422F1D785C8A0020E77E /* BookMarkController.xib */,
+			);
+			path = BookMark;
+			sourceTree = "<group>";
+		};
 		2B5C0D0A1D6C820C00278761 = {
 			isa = PBXGroup;
 			children = (
@@ -64,19 +84,10 @@
 		2B5C0D151D6C820C00278761 /* AnimationMaker */ = {
 			isa = PBXGroup;
 			children = (
-				2B5C0D191D6C820C00278761 /* AppDelegate.h */,
-				2B5C0D1A1D6C820C00278761 /* AppDelegate.m */,
-				2B5C0D1C1D6C820C00278761 /* ViewController.h */,
-				2B5C0D1D1D6C820C00278761 /* ViewController.m */,
-				2B5C0D1F1D6C820C00278761 /* Main.storyboard */,
-				2B5C0D221D6C820C00278761 /* Assets.xcassets */,
-				2B5C0D241D6C820C00278761 /* LaunchScreen.storyboard */,
-				2B5C0D271D6C820C00278761 /* Info.plist */,
 				2B5C0D161D6C820C00278761 /* Supporting Files */,
-				2B5C0D331D6D79E000278761 /* BookMarkView.h */,
-				2B5C0D341D6D79E000278761 /* BookMarkView.m */,
-				2B5C0D381D6D89B700278761 /* QCMethod.h */,
-				2B5C0D391D6D89B700278761 /* QCMethod.m */,
+				2B5642291D785C5A0020E77E /* BookMark */,
+				2B5642261D785BBC0020E77E /* AnimationDemoController.h */,
+				2B5642271D785BBC0020E77E /* AnimationDemoController.m */,
 			);
 			path = AnimationMaker;
 			sourceTree = "<group>";
@@ -84,6 +95,16 @@
 		2B5C0D161D6C820C00278761 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2B5C0D191D6C820C00278761 /* AppDelegate.h */,
+				2B5C0D1A1D6C820C00278761 /* AppDelegate.m */,
+				2B5C0D1C1D6C820C00278761 /* ViewController.h */,
+				2B5C0D1D1D6C820C00278761 /* ViewController.m */,
+				2B5C0D381D6D89B700278761 /* QCMethod.h */,
+				2B5C0D391D6D89B700278761 /* QCMethod.m */,
+				2B5C0D1F1D6C820C00278761 /* Main.storyboard */,
+				2B5C0D241D6C820C00278761 /* LaunchScreen.storyboard */,
+				2B5C0D271D6C820C00278761 /* Info.plist */,
+				2B5C0D221D6C820C00278761 /* Assets.xcassets */,
 				2B5C0D171D6C820C00278761 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -148,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B5C0D261D6C820C00278761 /* LaunchScreen.storyboard in Resources */,
+				2B5642311D785C8A0020E77E /* BookMarkController.xib in Resources */,
 				2B5C0D231D6C820C00278761 /* Assets.xcassets in Resources */,
 				2B5C0D211D6C820C00278761 /* Main.storyboard in Resources */,
 			);
@@ -161,10 +183,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B5C0D1E1D6C820C00278761 /* ViewController.m in Sources */,
+				2B5642301D785C8A0020E77E /* BookMarkController.m in Sources */,
 				2B5C0D3B1D6D89B700278761 /* QCMethod.m in Sources */,
+				2B56422C1D785C730020E77E /* BookMarkView.m in Sources */,
 				2B5C0D1B1D6C820C00278761 /* AppDelegate.m in Sources */,
-				2B5C0D351D6D79E000278761 /* BookMarkView.m in Sources */,
 				2B5C0D181D6C820C00278761 /* main.m in Sources */,
+				2B5642281D785BBC0020E77E /* AnimationDemoController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

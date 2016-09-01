@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AnimationDemoController.h"
 
 @interface ViewController ()
 
@@ -16,12 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    AnimationDemoController *vc = [AnimationDemoController new];
+    [self pushViewController:vc animated:NO];
     
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 @end
