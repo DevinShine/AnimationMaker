@@ -16,5 +16,5 @@ Inspired by the [works](https://dribbble.com/shots/2309834-Yet-another-toggle-an
 3.**Cude3DAnimation**
 Inspired by the [works](http://liujiepp.lofter.com/post/1cc7f8b1_856d4d6).
 
-![](http://imglf1.nosdn.127.net/img/K3Z2T2c5Q3BzVVZIa1Vkb0dBcWxDbTZJQjBDbUl5UUNHSkV6SDJhQk5RTFFsRzcrRTVRaTh3PT0.gif)
+![](Resource/Cube3DAnimation.gif)
 
