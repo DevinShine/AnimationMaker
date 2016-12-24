@@ -25,6 +25,7 @@
     self.classNames = @[].mutableCopy;
     [self addCell:@"BookMark" class:@"BookMarkController"];
     [self addCell:@"CheckView" class:@"CheckViewController"];
+    [self addCell:@"Cube3D" class:@"Cube3DViewController"];
     [self.tableView reloadData];
 }
 

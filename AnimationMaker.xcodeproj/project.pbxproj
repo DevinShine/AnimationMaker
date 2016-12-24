@@ -15,6 +15,8 @@
 		2B5642371D78690F0020E77E /* CheckViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B5642351D78690F0020E77E /* CheckViewController.xib */; };
 		2B56423A1D78691C0020E77E /* CheckView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5642391D78691C0020E77E /* CheckView.m */; };
 		2B56423D1D786E970020E77E /* CheckSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B56423C1D786E970020E77E /* CheckSwitch.m */; };
+		2B5642421D79B36D0020E77E /* CircleSwitchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5642401D79B36D0020E77E /* CircleSwitchController.m */; };
+		2B5642431D79B36D0020E77E /* CircleSwitchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B5642411D79B36D0020E77E /* CircleSwitchController.xib */; };
 		2B5C0D181D6C820C00278761 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5C0D171D6C820C00278761 /* main.m */; };
 		2B5C0D1B1D6C820C00278761 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5C0D1A1D6C820C00278761 /* AppDelegate.m */; };
 		2B5C0D1E1D6C820C00278761 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5C0D1D1D6C820C00278761 /* ViewController.m */; };
@@ -22,6 +24,9 @@
 		2B5C0D231D6C820C00278761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5C0D221D6C820C00278761 /* Assets.xcassets */; };
 		2B5C0D261D6C820C00278761 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B5C0D241D6C820C00278761 /* LaunchScreen.storyboard */; };
 		2B5C0D3B1D6D89B700278761 /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5C0D391D6D89B700278761 /* QCMethod.m */; };
+		2BD591CD1E0E281900BFF676 /* Cube3DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD591CC1E0E281900BFF676 /* Cube3DViewController.m */; };
+		2BD591D11E0E284900BFF676 /* Cube3DCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD591CF1E0E284900BFF676 /* Cube3DCell.m */; };
+		2BD591D21E0E284900BFF676 /* Cube3DCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD591D01E0E284900BFF676 /* Cube3DCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +44,9 @@
 		2B5642391D78691C0020E77E /* CheckView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckView.m; sourceTree = "<group>"; };
 		2B56423B1D786E970020E77E /* CheckSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckSwitch.h; sourceTree = "<group>"; };
 		2B56423C1D786E970020E77E /* CheckSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckSwitch.m; sourceTree = "<group>"; };
+		2B56423F1D79B36D0020E77E /* CircleSwitchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleSwitchController.h; sourceTree = "<group>"; };
+		2B5642401D79B36D0020E77E /* CircleSwitchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleSwitchController.m; sourceTree = "<group>"; };
+		2B5642411D79B36D0020E77E /* CircleSwitchController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircleSwitchController.xib; sourceTree = "<group>"; };
 		2B5C0D131D6C820C00278761 /* AnimationMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B5C0D171D6C820C00278761 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2B5C0D191D6C820C00278761 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +59,11 @@
 		2B5C0D271D6C820C00278761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B5C0D381D6D89B700278761 /* QCMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCMethod.h; sourceTree = "<group>"; };
 		2B5C0D391D6D89B700278761 /* QCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCMethod.m; sourceTree = "<group>"; };
+		2BD591CB1E0E281900BFF676 /* Cube3DViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube3DViewController.h; sourceTree = "<group>"; };
+		2BD591CC1E0E281900BFF676 /* Cube3DViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cube3DViewController.m; sourceTree = "<group>"; };
+		2BD591CE1E0E284900BFF676 /* Cube3DCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube3DCell.h; sourceTree = "<group>"; };
+		2BD591CF1E0E284900BFF676 /* Cube3DCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cube3DCell.m; sourceTree = "<group>"; };
+		2BD591D01E0E284900BFF676 /* Cube3DCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cube3DCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +103,16 @@
 			path = CheckView;
 			sourceTree = "<group>";
 		};
+		2B56423E1D79B3560020E77E /* CircleSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				2B56423F1D79B36D0020E77E /* CircleSwitchController.h */,
+				2B5642401D79B36D0020E77E /* CircleSwitchController.m */,
+				2B5642411D79B36D0020E77E /* CircleSwitchController.xib */,
+			);
+			path = CircleSwitch;
+			sourceTree = "<group>";
+		};
 		2B5C0D0A1D6C820C00278761 = {
 			isa = PBXGroup;
 			children = (
@@ -109,9 +132,11 @@
 		2B5C0D151D6C820C00278761 /* AnimationMaker */ = {
 			isa = PBXGroup;
 			children = (
+				2BD591C71E0E27AE00BFF676 /* 3DCube */,
 				2B5C0D161D6C820C00278761 /* Supporting Files */,
 				2B5642291D785C5A0020E77E /* BookMark */,
 				2B5642321D7868BA0020E77E /* CheckView */,
+				2B56423E1D79B3560020E77E /* CircleSwitch */,
 				2B5642261D785BBC0020E77E /* AnimationDemoController.h */,
 				2B5642271D785BBC0020E77E /* AnimationDemoController.m */,
 			);
@@ -134,6 +159,18 @@
 				2B5C0D171D6C820C00278761 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BD591C71E0E27AE00BFF676 /* 3DCube */ = {
+			isa = PBXGroup;
+			children = (
+				2BD591CB1E0E281900BFF676 /* Cube3DViewController.h */,
+				2BD591CC1E0E281900BFF676 /* Cube3DViewController.m */,
+				2BD591CE1E0E284900BFF676 /* Cube3DCell.h */,
+				2BD591CF1E0E284900BFF676 /* Cube3DCell.m */,
+				2BD591D01E0E284900BFF676 /* Cube3DCell.xib */,
+			);
+			path = 3DCube;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,9 +231,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BD591D21E0E284900BFF676 /* Cube3DCell.xib in Resources */,
 				2B5C0D261D6C820C00278761 /* LaunchScreen.storyboard in Resources */,
 				2B5642371D78690F0020E77E /* CheckViewController.xib in Resources */,
 				2B5642311D785C8A0020E77E /* BookMarkController.xib in Resources */,
+				2B5642431D79B36D0020E77E /* CircleSwitchController.xib in Resources */,
 				2B5C0D231D6C820C00278761 /* Assets.xcassets in Resources */,
 				2B5C0D211D6C820C00278761 /* Main.storyboard in Resources */,
 			);
@@ -215,10 +254,13 @@
 				2B5C0D3B1D6D89B700278761 /* QCMethod.m in Sources */,
 				2B56422C1D785C730020E77E /* BookMarkView.m in Sources */,
 				2B5C0D1B1D6C820C00278761 /* AppDelegate.m in Sources */,
+				2BD591CD1E0E281900BFF676 /* Cube3DViewController.m in Sources */,
 				2B5642361D78690F0020E77E /* CheckViewController.m in Sources */,
 				2B5C0D181D6C820C00278761 /* main.m in Sources */,
 				2B5642281D785BBC0020E77E /* AnimationDemoController.m in Sources */,
 				2B56423A1D78691C0020E77E /* CheckView.m in Sources */,
+				2B5642421D79B36D0020E77E /* CircleSwitchController.m in Sources */,
+				2BD591D11E0E284900BFF676 /* Cube3DCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
